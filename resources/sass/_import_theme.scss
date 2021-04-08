@@ -1,0 +1,80 @@
+/* #IMPORTS ~~
+========================================================================== */
+@import 'bootstrap/functions';
+@import 'bootstrap/variables';
+@import 'bootstrap/mixins';
+@import 'mixins/mixins';
+@import 'themes/modules/variables';
+@import 'themes/modules/placeholders';
+
+
+/* #GLOBAL IMPORTS
+========================================================================== */
+/*@import '_imports/global-import';*/
+
+/* #FRAMEWORK - Structure and layout files. (**DO NOT** change order)
+                DOC: you can disable unused modules
+========================================================================== */
+/* contains root variables to be used with css (see docs) */
+/* html and body base styles */
+@import 'themes/modules/body';
+
+@import 'themes/modules/page-header';
+@import 'themes/modules/page-logo';
+@import 'themes/modules/page-search';
+@import 'themes/modules/dropdown-icon-menu';
+@import 'themes/modules/dropdown-notification';
+@import 'themes/modules/dropdown-app-list';
+@import 'themes/modules/header-function-fixed';
+@import 'themes/modules/left-panel';
+@import 'themes/modules/nav';
+@import 'themes/modules/nav-listfilter';
+@import 'themes/modules/nav-info-card';
+@import 'themes/modules/nav-function-top';
+@import 'themes/modules/nav-function-minify';
+@import 'themes/modules/nav-footer';
+@import 'themes/modules/page-wrapper';
+@import 'themes/modules/page-heading';
+@import 'themes/modules/page-footer';
+@import 'themes/modules/page-components-accordion';
+@import 'themes/modules/page-components-alerts';
+@import 'themes/modules/page-components-badge';
+@import 'themes/modules/page-components-buttons';
+@import 'themes/modules/page-components-navspills';
+@import 'themes/modules/page-components-cards';
+@import 'themes/modules/page-components-carousel';
+@import 'themes/modules/page-components-dropdowns';
+@import 'themes/modules/page-components-messanger';
+@import 'themes/modules/page-components-modal';
+@import 'themes/modules/page-components-panels';
+@import 'themes/modules/page-components-popovers';
+@import 'themes/modules/page-components-shortcut';
+@import 'themes/modules/page-components-tabs';
+@import 'themes/modules/page-components-custom-forms';
+@import 'themes/modules/page-components-pagination';
+@import 'themes/modules/page-components-listgroup';
+
+
+@import 'themes/modules/helpers';
+@import 'themes/modules/misc';
+@import 'themes/modules/hack';
+@import 'themes/modules/responsive';
+@import 'themes/modules/forms';
+@import 'themes/modules/settings-demo';
+@import 'themes/modules/settings-demo-incompatiblity-list';
+@import 'themes/modules/settings-demo-theme-colors';
+
+
+@import 'themes/modules/mod-nav-accessibility';
+@import 'themes/modules/colors';
+
+@import 'themes/modules/custom-bootstrap-varients';
+
+//we import plugins here
+@import 'themes/plugins/plugins-chartist';
+@import 'themes/plugins/plugins-select2';
+@import 'themes/plugins/plugins-datatables';
+@import 'themes/plugins/plugins-datepicker';
+@import 'themes/plugins/plugins-daterangepicker';
+@import 'themes/plugins/plugins-ion.rangeslider';
+@import 'themes/plugins/plugins-pace';

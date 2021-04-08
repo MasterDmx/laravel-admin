@@ -1,0 +1,10 @@
+.extra-shortcut {
+    position: fixed;
+    right: 5.5rem;
+    bottom: 1.5rem;
+    z-index: 931;
+
+    &__controller {
+        padding: 0.75rem 1.125rem;
+    }
+}

@@ -1,0 +1,164 @@
+/* #GLOBAL IMPORTS
+========================================================================== */
+@import 'import';
+
+/* #FRAMEWORK - Structure and layout files. (**DO NOT** change order)
+                DOC: you can disable unused _modules (may brake the page)
+========================================================================== */
+/* contains root variables to be used with css (see docs) */
+@import 'components/root';
+/* resets DOM elements to its natural state */
+@import 'components/reset';
+/* html and body base styles */
+@import 'components/body';
+/* app header */
+@import 'components/page-header';
+/* app logo */
+@import 'components/page-logo';
+/* app search */
+@import 'components/page-search';
+/* icon menu with user options */
+@import 'components/dropdown-icon-menu';
+/* dropdown notification in the app header */
+@import 'components/dropdown-notification';
+/* icon menu with stacked icons located in the app header */
+@import 'components/dropdown-app-list';
+/* app header stays fixed */
+@import 'components/header-function-fixed';
+/* app far left panel */
+@import 'components/left-panel';
+/* app navigation */
+@import 'components/nav';
+/* app navigation filter */
+@import 'components/nav-listfilter';
+/* app info card inside navigation */
+@import 'components/nav-info-card';
+/* app navigation made horizontal */
+@import 'components/nav-function-top';
+/* app navgation stays hidden */
+@import 'components/nav-function-hidden';
+/* app navigation stays fixed */
+@import 'components/nav-function-fixed';
+/* app navigation stays minified */
+@import 'components/nav-function-minify';
+/* app navigation footer */
+@import 'components/nav-footer';
+/* app wrapper */
+@import 'components/page-wrapper';
+/* app content heading */
+@import 'components/page-heading';
+/* app content */
+@import 'components/page-content';
+/* app footer */
+@import 'components/page-footer';
+/* app footer stays fixed */
+@import 'components/page-footer-fixed';
+/* app error page */
+@import 'components/page-error';
+
+/* various app components (see docs for the full list) */
+@import 'components/page-components-accordion';
+@import 'components/page-components-alerts';
+@import 'components/page-components-badge';
+@import 'components/page-components-breadcrumb';
+@import 'components/page-components-buttons';
+@import 'components/page-components-cards';
+@import 'components/page-components-carousel';
+@import 'components/page-components-dropdowns';
+@import 'components/page-components-icon-stack';
+@import 'components/page-components-listfilter';
+@import 'components/page-components-loader';
+@import 'components/page-components-messanger';
+@import 'components/page-components-modal';
+@import 'components/page-components-pagination';
+@import 'components/page-components-panels';
+@import 'components/page-components-popovers';
+@import 'components/page-components-progressbar';
+@import 'components/page-components-shortcut';
+@import 'components/page-components-side-panels';
+@import 'components/page-components-tables';
+@import 'components/page-components-tabs';
+@import 'components/page-components-tooltips';
+
+/* #MISC - misc styles, helpers, effects and hacks
+========================================================================== */
+@import 'components/helpers';
+@import 'components/misc';
+@import 'components/effects';
+@import 'components/hack';
+@import 'components/hack-ie';
+
+/* #MOBILE - mobile media related styles
+========================================================================== */
+/* contains most of the responsive styles for the app */
+@import 'components/responsive';
+/* changes content colors based on ambience light source of the user (experimental) */
+@import 'components/light-levels';
+
+/* #FORMS (customized bootstrap form elems)
+========================================================================== */
+@import 'components/forms';
+
+/* #COMPONENTS (can be removed but may or may not impact other components)
+========================================================================== */
+/*@import 'components/form-switches';*/
+@import 'components/translate-3d';
+
+/* #DEMO ELEMS - elements mostly used for demo (can be removed)
+========================================================================== */
+@import 'components/settings-demo-incompatiblity-list';
+@import 'components/settings-demo-theme-colors';
+@import 'components/settings-demo';
+@import 'components/demo-only';
+
+/* #_extensions - Components imported in alphabetical order (remove extensions from directory if not needed)
+========================================================================== */
+@import 'extensions/extension-pace';
+@import 'extensions/extension-slimscroll';
+@import 'extensions/extension-waves';
+
+/* #ANIMATION - CSS animations and keyframes
+========================================================================== */
+@import 'components/keyframes-general';
+@import 'components/keyframes-highlight';
+@import 'components/keyframes-spinner';
+@import 'components/keyframes-transition';
+
+/* #MODS - Layout manipulation
+========================================================================== */
+@import 'components/mod-bg';
+@import 'components/mod-clean-page-bg';
+@import 'components/mod-colorblind';
+@import 'components/mod-disable-animation';
+@import 'components/mod-hide-info-card';
+@import 'components/mod-hide-nav-icons';
+@import 'components/mod-high-contrast';
+@import 'components/mod-lean-page-header';
+@import 'components/mod-main-boxed';
+@import 'components/mod-nav-accessibility';
+@import 'components/mod-nav-dark';
+@import 'components/mod-smartpanel-icons';
+@import 'components/mod-text-size';
+
+/* #COLORS - we place this here so it can override other colors as needed
+========================================================================== */
+@import 'components/colors';
+
+/* #APP related modules (print, fullscreen, etc)
+========================================================================== */
+@import 'components/app-custom-scrollbar';
+@import 'components/app-fullscreen';
+@import 'components/app-print';
+
+// ------------------------------------------------------------------------
+// Extra
+// ------------------------------------------------------------------------
+
+@import 'components/extra/helpers';
+@import 'components/extra/panel';
+@import 'components/extra/shortcut-menu';
+@import 'components/extra/extra-shortcut';
+@import 'components/extra/table';
+@import 'components/extra/page-editor';
+@import 'components/extra/admin-icon';
+@import 'components/extra/page-content';

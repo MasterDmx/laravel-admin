@@ -1,0 +1,49 @@
+/* #DARK MODE
+========================================================================== */
+
+@import 'skin-dark-modules/variables';
+
+.mod-skin-dark:not(.mod-skin-light) {
+
+	background-color: #303133;
+	color: $dark-content-color;
+
+	#skin-dark {
+		&:before {
+			display: flex;
+		}
+	}
+
+	@import 'skin-dark-modules/accordion';
+	@import 'skin-dark-modules/alerts';
+	@import 'skin-dark-modules/alt';
+	@import 'skin-dark-modules/border';
+	@import 'skin-dark-modules/breadcrumb';
+	@import 'skin-dark-modules/button';
+	@import 'skin-dark-modules/chat-segment';
+	@import 'skin-dark-modules/colors';
+	@import 'skin-dark-modules/demo';
+	@import 'skin-dark-modules/demo-settings';
+	@import 'skin-dark-modules/dropdown';
+	@import 'skin-dark-modules/forms';
+	@import 'skin-dark-modules/misc';
+	@import 'skin-dark-modules/modal';
+	@import 'skin-dark-modules/nav';
+	@import 'skin-dark-modules/navbar';
+	@import 'skin-dark-modules/navtabs';
+	@import 'skin-dark-modules/notitfication';
+	@import 'skin-dark-modules/page_etc';
+	@import 'skin-dark-modules/pagination';
+	@import 'skin-dark-modules/progressbar';
+	@import 'skin-dark-modules/panel';
+	@import 'skin-dark-modules/tables';
+	@import 'skin-dark-modules/toast';
+	@import 'skin-dark-modules/tooltip';
+	@import 'skin-dark-modules/plugins/plugin_datatables';
+	@import 'skin-dark-modules/plugins/plugin_other';
+	@import 'skin-dark-modules/plugins/plugin_prettyprint';
+	@import 'skin-dark-modules/plugins/plugin_select2';
+
+}
+
+@import 'skin-dark-modules/mobile';

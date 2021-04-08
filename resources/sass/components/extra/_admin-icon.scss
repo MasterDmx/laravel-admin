@@ -1,0 +1,20 @@
+.admin-icon {
+    position: relative;
+    z-index: 3;
+    fill: #ffffffba;
+    width: 50px;
+}
+
+.admin-header-logo {
+    .admin-icon {
+        width: 28px;
+        fill: #886ab5;
+    }
+}
+
+.admin-side-logo {
+    .admin-icon {
+        fill: #ffffffc2;
+        width: 45px;
+    }
+}

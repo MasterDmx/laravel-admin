@@ -1,0 +1,308 @@
+@charset "UTF-8";
+.bbcode .markItUpHeader {
+  padding: 0;
+}
+
+.bbcode .markItUpHeader ul ul {
+  top: 32px;
+  left: -4px;
+  padding: 10px 0px;
+}
+
+.bbcode .h-elem a {
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 400;
+  text-indent: 0;
+  font-size: 0;
+  padding: 0;
+  text-align: center;
+  display: inline-block;
+  padding: 10px;
+  transition: all 0.3s;
+}
+
+.bbcode .h-elem a:hover {
+  background: #f5f5f5;
+}
+
+.bbcode .h-elem a:before {
+  text-indent: 0;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.bbcode .h-elem ul li a {
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: normal;
+  text-align: left;
+  color: #747a80;
+  padding: 10px 12px;
+  height: auto;
+  width: 200px;
+}
+
+.bbcode .h-elem ul li a:before {
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 400;
+  text-indent: 0;
+  font-size: 14px;
+  padding: 0;
+  text-align: center;
+  display: inline-block;
+  padding-right: 15px;
+  padding-left: 5px;
+  color: #000;
+}
+
+.bbcode .h-elem-bold a:before {
+  content: "";
+}
+
+.bbcode .h-elem-italic a:before {
+  content: "";
+}
+
+.bbcode .h-elem-underline a:before {
+  content: "";
+}
+
+.bbcode .h-elem-paragraph a:before {
+  content: "";
+}
+
+.bbcode .h-elem-header a:before {
+  content: "";
+}
+
+.bbcode .h-elem-picture a:before {
+  content: "";
+}
+
+.bbcode .h-elem-picture-out a:before {
+  content: "";
+}
+
+.bbcode .h-elem-list a:before {
+  content: "";
+}
+
+.bbcode .h-elem-list-num a:before {
+  content: "";
+}
+
+.bbcode .h-elem-list-item a:before {
+  content: "";
+}
+
+.bbcode .h-elem-link a:before {
+  content: "";
+}
+
+.bbcode .h-elem-clean a:before {
+  content: "";
+}
+
+.bbcode .h-elem-table a:before {
+  content: "";
+}
+
+.bbcode .h-elem-quote a:before {
+  content: "";
+}
+
+.bbcode .h-elem-left a:before {
+  content: "";
+}
+
+.bbcode .h-elem-center a:before {
+  content: "";
+}
+
+.bbcode .h-elem-right a:before {
+  content: "";
+}
+
+.bbcode .h-elem-justify a:before {
+  content: "";
+}
+
+.markItUp * {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: unset;
+}
+
+.markItUp a:link,
+.markItUp a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+.markItUpContainer {
+  border: 1px solid #eceff1;
+  background: #fff;
+}
+
+.markItUpEditor {
+  padding: 0.5rem 0.875rem;
+  border: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  clear: both;
+  line-height: 22px;
+  overflow: auto;
+  color: #747a80;
+  font-size: 14px;
+}
+
+.markItUpPreviewFrame {
+  overflow: auto;
+  background-color: #FFFFFF;
+  border: 1px solid #3C769D;
+  width: 99.9%;
+  height: 300px;
+}
+
+.markItUpFooter {
+  width: 100%;
+  cursor: n-resize;
+  padding-bottom: 10px;
+}
+
+.markItUpResizeHandle {
+  overflow: hidden;
+  width: 22px;
+  height: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(images/handle.png);
+  cursor: n-resize;
+}
+
+/***************************************************************************************/
+.markItUpHeader {
+  padding: 5px;
+  border-bottom: 1px solid #eceff1;
+}
+
+.markItUpHeader ul {
+  display: flex;
+  background: #f7f8f8;
+}
+
+/* first row of buttons */
+.markItUpHeader ul li {
+  list-style: none;
+  position: relative;
+  display: inline-block;
+}
+
+.markItUpHeader ul li ul {
+  display: none;
+}
+
+.markItUpHeader ul li:hover > ul {
+  display: block;
+}
+
+.markItUpHeader ul .markItUpDropMenu {
+  background: transparent url(images/menu.png) no-repeat 115% 50%;
+  margin-right: 5px;
+}
+
+.markItUpHeader ul .markItUpDropMenu li {
+  margin-right: 0px;
+}
+
+.markItUpHeader ul .markItUpSeparator {
+  margin: 0 10px;
+  width: 1px;
+  height: 16px;
+  overflow: hidden;
+  background-color: #CCC;
+}
+
+.markItUpHeader ul ul .markItUpSeparator {
+  width: auto;
+  height: 1px;
+  margin: 0px;
+}
+
+/* next rows of buttons */
+.markItUpHeader ul ul {
+  display: none;
+  position: absolute;
+  top: 18px;
+  left: 0px;
+  background: #fff;
+  height: inherit;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.11);
+}
+
+.markItUpHeader ul ul li {
+  float: none;
+}
+
+.markItUpHeader ul ul .markItUpDropMenu {
+  background: #F5F5F5 url(images/submenu.png) no-repeat 100% 50%;
+}
+
+/* next rows of buttons */
+.markItUpHeader ul ul ul {
+  position: absolute;
+  top: -1px;
+  left: 150px;
+}
+
+.markItUpHeader ul ul ul li {
+  float: none;
+}
+
+.markItUpHeader ul a {
+  display: block;
+  width: 16px;
+  height: 16px;
+  text-indent: -100000px;
+  background-repeat: no-repeat;
+  padding: 3px;
+  margin: 0px;
+  background-position: center;
+}
+
+.markItUpHeader ul ul a {
+  display: block;
+  padding-left: 0px;
+  text-indent: 0;
+  width: 120px;
+  padding: 5px 5px 5px 25px;
+  background-position: 2px 50%;
+  padding: 10px 40px;
+}
+
+.markItUpHeader ul ul a:hover {
+  background-color: #f9f9f9;
+}
+
+.html .markItUpEditor {
+  background-image: url(images/bg-editor-html.png);
+}
+
+.markdown .markItUpEditor {
+  background-image: url(images/bg-editor-markdown.png);
+}
+
+.textile .markItUpEditor {
+  background-image: url(images/bg-editor-textile.png);
+}
+
+.bbcode .markItUpEditor {
+  resize: none;
+}
+
+.wiki .markItUpEditor,
+.dotclear .markItUpEditor {
+  background-image: url(images/bg-editor-wiki.png);
+}

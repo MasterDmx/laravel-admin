@@ -1,0 +1,20 @@
+{
+    "name": "masterdmx/laravel-admin",
+    "type": "library",
+    "description": "",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sergey Krening",
+            "email": "masterdmx3325@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "MasterDmx\\Admin\\": "src/"
+        }
+    },
+    "version": "1.0.0",
+    "minimum-stability": "stable",
+    "require": {}
+}

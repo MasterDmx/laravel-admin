@@ -1,0 +1,112 @@
+.bbcode .markItUpHeader {
+    padding: 0;
+}
+
+.bbcode .markItUpHeader ul ul {
+    top: 32px;
+    left: -4px;
+    padding: 10px 0px;
+}
+
+
+.bbcode .h-elem a {
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 400;
+    text-indent: 0;
+    font-size: 0;
+    padding: 0;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    transition: all .3s;
+}
+.bbcode .h-elem a:hover {
+    background: #f5f5f5;
+}
+.bbcode .h-elem a:before {
+    text-indent: 0;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.bbcode .h-elem ul li a {
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: normal;
+    text-align: left;
+    color: #747a80;
+    padding: 10px 12px;
+    height: auto;
+    width: 200px;
+}
+.bbcode .h-elem ul li a:before {
+    //font: normal normal normal 104px/1 'Font Awesome 5 Pro';
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 400;
+    text-indent: 0;
+    font-size: 14px;
+    padding: 0;
+    text-align: center;
+    display: inline-block;
+    padding-right: 15px;
+    padding-left: 5px;
+    color: #000;
+}
+
+
+
+.bbcode .h-elem-bold a:before {
+    content: "\f6b1";
+}
+.bbcode .h-elem-italic a:before {
+    content: "\f033";
+}
+.bbcode .h-elem-underline a:before {
+    content: "\f0cd";
+}
+.bbcode .h-elem-paragraph a:before {
+    content: "\f1dd";
+}
+.bbcode .h-elem-header a:before {
+    content: "\f1dc";
+}
+.bbcode .h-elem-picture a:before {
+    content: "\f03e";
+}
+.bbcode .h-elem-picture-out a:before {
+    content: "\f1c5";
+}
+.bbcode .h-elem-list a:before {
+    content: "\f0ca";
+}
+.bbcode .h-elem-list-num a:before {
+    content: "\f0cb";
+}
+.bbcode .h-elem-list-item a:before {
+    content: "\f03c";
+}
+.bbcode .h-elem-link a:before {
+    content: "\f0c1";
+}
+.bbcode .h-elem-clean a:before {
+    content: "\f0c4";
+}
+.bbcode .h-elem-table a:before {
+    content: "\f0ce";
+}
+.bbcode .h-elem-quote a:before {
+    content: "\f10e";
+}
+.bbcode .h-elem-left a:before {
+    content: "\f036";
+}
+.bbcode .h-elem-center a:before {
+    content: "\f037";
+}
+.bbcode .h-elem-right a:before {
+    content: "\f038";
+}
+.bbcode .h-elem-justify a:before {
+    content: "\f039";
+}
