@@ -37,6 +37,12 @@
             padding: 5px 0.75rem;
         }
     }
+
+    &--items-middle {
+        td, th {
+            vertical-align: middle;
+        }
+    }
 }
 
 .table-support-preview {
