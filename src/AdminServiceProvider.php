@@ -22,6 +22,7 @@ class AdminServiceProvider extends BaseServiceProvider
             __DIR__.'/../public/img'        => public_path('assets/admin/img'),
             __DIR__.'/../public/js'         => public_path('assets/admin/js'),
             __DIR__.'/../public/media'      => public_path('assets/admin/media'),
+            __DIR__.'/../public/plugins'    => public_path('assets/admin/plugins'),
             __DIR__.'/../public/webfonts'   => public_path('assets/admin/webfonts'),
         ], 'resources');
 
