@@ -14,9 +14,7 @@ class AdminServiceProvider extends BaseServiceProvider
         include substr(__DIR__, 0, -4) . DIRECTORY_SEPARATOR . 'functions.php';
 
         // Конфиг
-        $this->publishes([
-            __DIR__.'/../config/admin.php' => config_path('admin.php'),
-        ]);
+        $this->publishes([__DIR__.'/../config/admin.php' => config_path('admin.php')], 'config');
 
         // Public файлы
         $this->publishes([
@@ -25,13 +23,13 @@ class AdminServiceProvider extends BaseServiceProvider
             __DIR__.'/../public/js'         => public_path('assets/admin/js'),
             __DIR__.'/../public/media'      => public_path('assets/admin/media'),
             __DIR__.'/../public/webfonts'   => public_path('assets/admin/webfonts'),
-        ], 'admin');
+        ], 'resources');
 
         // Resources файлы
         $this->publishes([
             __DIR__.'/../resources/sass'    => resource_path('sass/admin'),
             __DIR__.'/../resources/js'      => resource_path('js/admin'),
-        ], 'admin');
+        ], 'resources');
 
         // Подгружаем вьюхи
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'admin');

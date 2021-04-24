@@ -1,28 +1,35 @@
 const mix = require('laravel-mix');
 
+const sassOptions = {
+    processCssUrls: mix.inProduction()
+};
+
 // -------------------------------------------------------------
 // Admin
 // -------------------------------------------------------------
 
-// Compiled JS
-mix.js('resources/js/admin/compiled.js', 'public/assets/admin/js').version().vue();
+// SASS
 
-// SASS - Базовый стиль
-mix.sass('resources/sass/admin/app.scss', 'public/assets/admin/css').options({
-    processCssUrls: mix.inProduction()
-});
+// Базовый стиль
+mix.sass('resources/sass/admin/app.scss', 'public/assets/admin/css').options(sassOptions);
 
-// SASS - Стили цветовых тем
+// Стили цветовых тем
 let i = 1;
 while (i < 15) {
-    mix.sass('resources/sass/admin/themes/cust-theme-' + i + '.scss',  'public/assets/admin/css/themes').options({
-        processCssUrls: mix.inProduction()
-    });
-
+    mix.sass('resources/sass/admin/themes/cust-theme-' + i + '.scss',  'public/assets/admin/css/themes').options(sassOptions);
     i++;
 }
 
-// SASS - Тематические режимы
-mix.sass('resources/sass/admin/app.skins.scss', 'public/assets/admin/css').options({
-    processCssUrls: mix.inProduction()
-});
+// Тематические режимы
+mix.sass('resources/sass/admin/app.skins.scss', 'public/assets/admin/css').options(sassOptions);
+
+// Модуль Модальных окон VUE
+mix.sass('resources/sass/admin/modules/vue-js-modal.scss', 'public/assets/admin/css/modules').options(sassOptions);
+
+// Модуль BB редактора
+// mix.sass('resources/sass/admin/modules/markitup/markitup.scss', 'public/assets/admin/css/modules').options(sassOptions);
+
+// js
+
+// Compiled JS
+// mix.js('resources/js/admin/compiled.js', 'public/assets/admin/js').vue();

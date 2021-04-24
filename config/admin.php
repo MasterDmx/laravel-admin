@@ -30,6 +30,7 @@ return [
         // Допы
         \MasterDmx\Admin\ViewComponents\ExtraFormBlockMarkitup::class,
         \MasterDmx\Admin\ViewComponents\ExtraFormFieldMarkitup::class,
-
+        \MasterDmx\Admin\ViewComponents\FormBlockTinyMce::class,
+        \MasterDmx\Admin\ViewComponents\FormFieldTinyMce::class,
     ],
 ];
