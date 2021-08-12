@@ -19,9 +19,9 @@ class Admin
         return false;
     }
 
-    public function menu(string $alias = 'default')
+    public function menu()
     {
-        if ($handler = config('admin.menu.' . $alias)) {
+        if ($handler = config('admin.menu')) {
             if (class_exists($handler)) {
                 return (new $handler)->render();
             }

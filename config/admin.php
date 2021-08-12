@@ -3,8 +3,7 @@
 return [
 
     // Меню
-    'menu' => [
-    ],
+    'menu' => \App\Admin\Menu::class,
 
     // Компоненты
     'components' => [
